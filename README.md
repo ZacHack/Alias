@@ -1,4 +1,4 @@
 Alias
 =====
 
-Plugin for PocketMine that keeps tracks of all of a players usernames
+Plugin for PocketMine that keeps track of all the usernames a player uses
