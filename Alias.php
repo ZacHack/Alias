@@ -42,7 +42,7 @@ class alias implements Plugin{
 				return "[Alias] Player doesn't exists";
 			}
 			$player = $this->api->player->getOffline($name);
-			$ip = $player->get('lastIP');
+			$ip = $player->get('lastID');
 		}else{
 			$ip = $player->ip;
 		}
