@@ -1,0 +1,25 @@
+name: Alias
+version: 1.1.0
+api: [1.0.0]
+author: ZacHack
+description: Allows users to view all the usernames one user has used
+main: Alias\MainClass
+
+commands:
+  alias:
+    description: "Allows users to view all the usernames one user has used"
+    usage: "/alias <username>"
+    permission: "alias.command.alias"
+
+permissions:
+  alias:
+    default: op
+    description: "Allows ops to use the alias command"
+    children:
+      alias.command:
+        default: op
+        description: "Allows ops to use the alias command"
+        children:
+          alias.command.alias:
+            default: op
+            desctiption: "Allows checking player names"
