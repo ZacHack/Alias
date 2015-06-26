@@ -1,6 +1,6 @@
 name: Alias
-version: 1.1.0
-api: [1.0.0]
+version: 1.2.0
+api: [1.12.0]
 author: ZacHack
 description: Allows users to view all the usernames one user has used
 main: Alias\MainClass
