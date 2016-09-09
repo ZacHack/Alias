@@ -1,6 +1,6 @@
 name: Alias
-version: 1.2.0
-api: [1.12.0]
+version: 2.0
+api: [2.0.0]
 author: ZacHack
 description: Allows users to view all the usernames one user has used
 main: Alias\MainClass
@@ -10,16 +10,40 @@ commands:
     description: "Allows users to view all the usernames one user has used"
     usage: "/alias <username>"
     permission: "alias.command.alias"
+  setalias:
+    description: "Change Alias's settings"
+    usage: "/setalias <cid/ip>"
+    permission: "alias.command.setalias"
+  aliasip:
+    description: "Uses IP"
+    usage: "/aliasip <username>"
+    permission: "alias.command.aliasip"
+  aliascid:
+    description: "Uses Client ID"
+    usage: "/aliascid <username>"
+    permission: "alias.command.aliascid"
+  checkalias:
+    description: "Check what Alias is set to"
+    usage: "/checkalias"
+    permission: "alias.commmand.checkalias"
 
 permissions:
-  alias:
-    default: op
-    description: "Allows ops to use the alias command"
-    children:
-      alias.command:
+    alias:
         default: op
-        description: "Allows ops to use the alias command"
+        description: "Alias commands"
         children:
-          alias.command.alias:
-            default: op
-            desctiption: "Allows checking player names"
+            alias.command.alias:
+                default: op
+                description: "Allows users to view all the usernames one user has used"
+            alias.command.setalias:
+                default: op
+                description: "Change settings for Alias"
+            alias.command.aliasip:
+                default: op
+                description: "Uses IP"
+            alias.command.aliascid:
+                default: op
+                description: "Uses Client ID"
+            alias.command.checkalias:
+                default: op
+                description: "Checks what Alias is set to"
