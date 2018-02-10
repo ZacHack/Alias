@@ -1,0 +1,8 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/poggit-orphanage/Alias
+branches:
+- master
+projects:
+  Alias:
+    path: ""
+    icon: icon.png
+...
