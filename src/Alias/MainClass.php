@@ -89,7 +89,7 @@ class MainClass extends PluginBase implements Listener{
 			$ipfile->save();
 		}
 	}
-	public function onCommand(CommandSender $sender, Command $command, $label, array $args){
+	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool{
 		switch($command->getName()){
 			case "alias":
 				if(!isset($args[0])){
