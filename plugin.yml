@@ -1,5 +1,5 @@
 name: Alias
-version: 1.2.1
+version: 1.2.2
 api: [3.0.0-ALPHA7, 3.0.0-ALPHA8, 3.0.0-ALPHA9, 3.0.0-ALPHA10, 3.0.0-ALPHA11, 3.0.0-ALPHA12]
 author: ZacHack
 description: Allows users to view all the usernames used from a player's IP
